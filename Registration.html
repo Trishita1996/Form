@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1">
+  <title>registration</title>
+
+  <script type="text/javascript">
+
+    function yesnoCheck() {
+      if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+      }
+      else document.getElementById('ifYes').style.display = 'none';
+
+    }
+  </script>
+  <style>
+    .wrapper {
+      text-align: center;
+    }
+
+    .button {
+      position: absolute;
+      top: 50%;
+    }
+
+    @media (max-width: 800px) {
+      .form-inline input {
+        margin: 10px 0;
+      }
+
+      .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .200em;
+      }
+
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: left;
+      }
+
+      table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    function validateForm() {
+      var val1 = register.SiteName.value;
+      var val2 = register.address.value;
+      var val3 = register.phonenumber.value;
+      var val4 = register.cityname.value;
+      var val5 = register.email.value;
+      var atposition = val5.indexof("@");
+      var dotposition = val5.indexof(".");
+      var val6 = register.statename.value;
+      var val7 = register.websitename.value;
+      var val8 = register.pincode.value;
+      var val9 = register.yesNo.value;
+      var val10 = regitser.Name.value;
+      var val11 = register.address2.value;
+      var val12 = register.ECphonenumber.value;
+      var val13 = register.cityname2.value;
+      var val14 = register.email2.value;
+      var atposition = val14.indexof("@");
+      var dotposition = val4.indexof(".");
+      var val15 = register.statename2.value;
+      var val16 = register.websitename2.value;
+      var val17 = register.pincode2.value;
+      var val18 = register.ECyesno.value;
+      var val19 = register.registrationnumber.value;
+      var val20 = register.filename.value;
+      var val21 = register.submit.value;
+
+
+      if (val1 == "") {
+        alert("Please provide Site name");
+        register.SiteName.focus();
+        return false;
+      }
+
+
+      if (val2 == "") {
+        alert("Please provide the address");
+        register.address.focus();
+        return false;
+      }
+
+
+      if (val3 == "") {
+        alert("Please provide phone number");
+        register.phonenumber.focus();
+        return false;
+      }
+
+
+      if (val4 == "") {
+        alert("Please provide the city name");
+        register.cityname.focus();
+        return false;
+      }
+
+
+      if (val5 == "") {
+        alert("Please provide the email id");
+        register.email.focus();
+        return false;
+      }
+
+      if (val6 == "") {
+        alert("Please provide the state name");
+        register.statename.focus();
+        return false;
+      }
+
+      if (val7 == "") {
+        alert("Please provide the website name");
+        register.websitename.focus();
+        return false;
+      }
+      if (val8 == "") {
+        alert("please provide the pin code");
+        register.pincode.focus();
+        return false;
+      }
+
+      if (val9 == "") {
+        alert("please provide the yes/no");
+        register.yesNo.focus();
+        return false;
+      }
+
+      if (val10 == "") {
+        alert("please provide the Name");
+        register.Name.focus();
+        return false;
+      }
+
+      if (val11 == "") {
+        alert("please provide the Address");
+        register.address2.focus();
+        return false;
+      }
+
+      if (val12 == "") {
+        alert("please provide the Phone Number");
+        register.ECphonenumber.focus();
+        return false;
+      }
+
+      if (val13 == "") {
+        alert("please provide the City Name");
+        register.cityname2.focus();
+        return false;
+      }
+
+      if (val14 == "") {
+        alert("please provide the Mail id");
+        register.email.focus();
+        return false;
+      }
+
+      if (val15 == "") {
+        alert("please provide the State name");
+        register.statename2.focus();
+        return false;
+      }
+
+      if (val16 == "") {
+        alert("please provide the Website name");
+        register.websitename2.focus();
+        return false;
+      }
+
+      if (val17 == "") {
+        alert("please provide the Pin code");
+        register.pincode2.focus();
+        return false;
+      }
+
+      if (val18 == "") {
+        alert("please provide the answer");
+        register.ECyesno.focus();
+        return false;
+      }
+
+      if (val19 == "") {
+        alert("please provide the Registration number");
+        register.registrationnumber.focus();
+        return false;
+      }
+
+      if (val20 == "") {
+        alert("please provide the File name");
+        register.filename.focus();
+        return false;
+      }
+
+      if (val21 == "") {
+        alert("please enter the Submit option");
+        register.submit.focus();
+        return false;
+      }
+    }
+  </script>
+</head>
+
+<body style="background-color:#E9EBEE; border:20px solid white; margin-right: 8%; margin-left:8%">
+
+  <table width="100%" height="120px" style="background-color:#0000b3;">
+    <th>
+      <h1 align="center">
+        <font color="white" size="16" face="Algerian"><u>Site Registration Form</u></font>
+      </h1>
+    </th>
+  </table>
+
+  <h5 align="left">
+    <font color="#000080" size="5" face="Algerian"><b><u>Instructions</u></b></font>
+  </h5>
+  <b>Complete all the fields in this form in order to generate registration number with QRS. You will be assigned unique
+    registration number within 48hrs after data verification.
+    <h5 align="left">
+      <font color="#000080" size="5" face="Algerian"><b><u>Site Information</u></b></font>
+    </h5>
+
+    <table width="80%" height="80%" align="center" valign="middle" class="table-hover table-bordered table">
+      <form method="post" class="form-inline" action="database.php" name="registration.html"
+        onsubmit="return validateForm();"><b>
+          <tr bgcolor="#E9EBEE">
+            <td>Site(Clinic/Hospital) Name </td>
+            <td><input type="text" name="SiteName" placeholder="Enter name in block letters" size="25" maxlength="100"
+                required> </td>
+            <td>Street Address</td>
+            <td colspan="3"><textarea name="address" placeholder="Input address" rows="7" cols="30"></textarea></td>
+          </tr>
+
+          <tr bgcolor="#E9EBEE">
+            <td>Telephone</td>
+            <td> <input type="tel" name="phonenumber" size="10" maxlength="10" required></td>
+            <td>City</td>
+            <td><input type="text" name="cityname" placeholder="Enter the name of the city" size="10" maxlength "20"
+                required></td>
+          </tr>
+
+          <tr bgcolor="#E9EBEE">
+            <td>Office E-mail Address</td>
+            <td><input type="email" name="email" placeholder="abc@gmail.com" size="30" maxlength "100"></td>
+            <td>State</td>
+            <td><input type="text" name="statename" placeholder="State Name" size="20" maxlength="50" required> </td>
+          </tr>
+
+          <tr bgcolor="#E9EBEE">
+            <td>Website</td>
+            <td> <input type="text" name="websitename" size="10" maxlength="30" > </td>
+            <td>Pin Code</td>
+            <td> <input type="number" name="pincode" size="6" maxlength="6" required> </td>
+          </tr>
+
+          <tr bgcolor="#E9EBEE">
+            <td>Ethics Committe Available?</td>
+            <td> <input type="radio" onclick="javascript:yesnoCheck();" name="yesNo" value="yes" id="yesCheck"
+                required>Yes
+              <input type="radio" onclick="javascript:yesnoCheck();" name="yesNo" value="no" id="noCheck" required>No
+            </td>
+          </tr>
+        </b>
+    </table>
+  </b>
+  <div id="ifYes" style="display:none">
+
+    <h5 align="left">
+      <font color="#000080" size="5" face="Algerian"><b><u>Ethics Committe Information</u></font>
+    </h5>
+    <table width="80%" height="80%" align="center" valign="middle" class="table-hover table-bordered table">
+
+      <tr bgcolor="#E9EBEE">
+        <td>Name</td>
+        <td><input type="text" name="Name" placeholder="Enter name in block letters" size="20" maxlength="100"> </td>
+        <td>Street Address</td>
+        <td colspan="3"><textarea name="address2" placeholder="Input address" rows="5" cols="50"></textarea></td>
+      </tr>
+
+      <tr bgcolor="#E9EBEE">
+        <td>Telephone</td>
+        <td> <input type="tel" name="ECphonenumber" size="10" maxlength="10"></td>
+        <td>City</td>
+        <td><input type="text" name="cityname2" placeholder="Enter the name of the city" size="10" maxlength "20"></td>
+      </tr>
+
+      <tr bgcolor="#E9EBEE">
+        <td>Office E-mail Address</td>
+        <td><input type="email" name="email2" placeholder="abc@gmail.com" size="20" maxlength "30"></td>
+        <td>State</td>
+        <td><input type="text" name="statename2" placeholder="State Name" size="20" maxlength="30"> </td>
+      </tr>
+
+      <tr bgcolor="#E9EBEE">
+        <td>Website</td>
+        <td> <input type="text" name="websitename2" size="20" maxlength="10"> </td>
+        <td>Pin Code</td>
+        <td> <input type="number" name="pincode2" size="20" maxlength="6"> </td>
+      </tr>
+
+      <tr bgcolor="#E9EBEE">
+        <td>Ethics Committe registered with CDSCO?</td>
+        <td> <input type="radio" name="ECyesno" value="yes">Yes
+          <input type="radio" name="ECyesno" value="no">No</td>
+        <td>If Yes, EC registration number:</td>
+        <td> <input type="text" name="registrationnumber" size="20" maxlength="50"> </td>
+      </tr>
+
+      <tr bgcolor="#E9EBEE">
+        <td>Upload the registration certification.(PDF document only)</td>
+        <td><input type="file" id="myFile" name="filename"></td>
+
+        <table>
+          <tr>
+            <td><label for="Name">Name:</label><br></td>
+            <td><input type="text" id="name" name="name"><br></td>
+            <td><label for="designation">Designation:</label><br></td>
+            <td><input type="text" id="designation" name="designation">
+          </tr>
+          </td>
+
+          <br>
+          <tr>
+        </table>
+  </div>
+  <input type="checkbox" name="declaration" required style="padding:20px;">
+  Declaration: I hereby declare that all above-mentioned information is in accordance with fact or truth up to my
+  knowledge and I bear the responsibilities for the correctness of the above-mentioned particulars.<br>
+  <div class="text-center"><input type="submit" value="Register" class="btn btn-primary btn-lg"></div>
+  </b>
+
+  <hr style="width:100%;margin-left:0;color:#FF0000">
+
+</body>
+
+</html>
